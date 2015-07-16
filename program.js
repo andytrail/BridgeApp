@@ -24,7 +24,7 @@ console.log(total);*/
 //exercise 3
 
 var fs = require('fs');
-console.log(process.argv[1]);
-fs.readFileSync(process.argv[1]);
+console.log(process.argv[2]);
+fs.readFileSync(process.argv[2]);
 
 

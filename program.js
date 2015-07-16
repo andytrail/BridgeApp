@@ -1,10 +1,9 @@
+//exercise 1
 //var world = 'HELLO WORLD';
-
-
 //console.log(world);
 
-
-var total = 0;
+//exercise 2
+/*var total = 0;
 for (var i = 0; i < process.argv.length; i++){
 
 if (i >= 2) {
@@ -20,4 +19,12 @@ if (i >= 2) {
 
 
 }
-console.log(total);
+console.log(total);*/
+
+//exercise 3
+
+var fs = require('fs');
+console.log(process.argv[1]);
+fs.readFileSync(process.argv[1]);
+
+

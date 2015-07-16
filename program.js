@@ -17,6 +17,7 @@ if (i >= 2) {
     console.log('not a number');
 
     }
-console.log(total);
+
 
 }
+console.log(total);

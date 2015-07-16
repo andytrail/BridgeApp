@@ -23,13 +23,16 @@ console.log(total);*/
 
 //exercise 3
 var line = 0;
+var brk = 0;
 var fs = require('fs');
 //console.log(process.argv[2]);
 var buf = fs.readFileSync(process.argv[2]);
 var str = buf.toString();
 line = str.split('\n');
-line = line - 1;
-console.log(line.length);
+brk = line.length;
+brk = brk -1 ;
+console.log(brk);
+
 //console.log(line[0]);
 
 

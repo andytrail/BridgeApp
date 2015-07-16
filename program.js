@@ -3,6 +3,9 @@
 
 //console.log(world);
 
-numbers = [process.argv];
-for (var i = 0; i < numbers.length; i++);
-    console.log(numbers[i]);
+numa = [process.argv];
+
+for (var i = 0; i < numa.length; i++);
+    console.log(numa[i]);
+console.log(Number(process.argv[3]));
+

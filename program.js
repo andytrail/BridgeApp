@@ -26,5 +26,7 @@ console.log(total);*/
 var fs = require('fs');
 console.log(process.argv[2]);
 var buf = fs.readFileSync(process.argv[2]);
-console.log(buf);
+var str = buf.toString();
+str.split('/n').length;
+console.log(str);
 

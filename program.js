@@ -14,7 +14,7 @@ if (i >= 2) {
 
 }
     else {
-    console.log('not a number');
+   // console.log('not a number');
 
     }
 

@@ -28,6 +28,7 @@ var fs = require('fs');
 var buf = fs.readFileSync(process.argv[2]);
 var str = buf.toString();
 line = str.split('\n');
+line = line - 1;
 console.log(line.length);
 //console.log(line[0]);
 

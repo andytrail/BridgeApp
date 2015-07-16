@@ -29,7 +29,7 @@ var buf = fs.readFileSync(process.argv[2]);
 var str = buf.toString();
 line = str.split('\n');
 console.log(line.length);
-console.log(line[0]);
+//console.log(line[0]);
 
 
 

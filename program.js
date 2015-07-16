@@ -9,7 +9,7 @@ for (var i = 0; i < process.argv.length; i++){
 
 if (i >= 2) {
 console.log(Number(process.argv[i]));
-    total += i;
+    total += Number(process.argv[i]);
 
 
 }

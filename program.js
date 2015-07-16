@@ -26,5 +26,5 @@ console.log(total);*/
 var fs = require('fs');
 console.log(process.argv[2]);
 fs.readFileSync(process.argv[2]);
-
+console.log(buf);
 

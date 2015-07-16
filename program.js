@@ -54,6 +54,7 @@ brk = brk.length - 1;
 
                                                                   }
 calcReturns();
+
 console.log(brk);
 
 

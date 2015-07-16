@@ -7,7 +7,15 @@
 
 for (var i = 0; i < process.argv.length; i++){
 
+if (i >= 2) {
 console.log(Number(process.argv[i]));
     console.log(i);
+   // console.log(i);
 
+
+}
+    else {
+    console.log('not a number');
+
+    }
 }

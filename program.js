@@ -22,11 +22,12 @@ if (i >= 2) {
 console.log(total);*/
 
 //exercise 3
-
+var line = 0;
 var fs = require('fs');
 console.log(process.argv[2]);
 var buf = fs.readFileSync(process.argv[2]);
 var str = buf.toString();
-str.split('/n').length;
-console.log(str);
+line = str.split('/n').length;
+console.log(line);
+
 

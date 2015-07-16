@@ -3,9 +3,11 @@
 
 //console.log(world);
 
-numa = [process.argv];
 
-for (var i = 0; i < numa.length; i++);
-    console.log(numa[i]);
-console.log(Number(process.argv[3]));
 
+for (var i = 0; i < process.argv.length; i++){
+
+console.log(Number(process.argv[i]));
+    console.log(i);
+
+}

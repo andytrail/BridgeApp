@@ -21,7 +21,7 @@ if (i >= 2) {
 }
 console.log(total);*/
 
-//exercise 3
+/*//exercise 3
 var line = 0;
 var brk = 0;
 var fs = require('fs');
@@ -31,9 +31,29 @@ var str = buf.toString();
 line = str.split('\n');
 brk = line.length;
 brk = brk -1 ;
-console.log(brk);
+console.log(brk);*/
 
 //console.log(line[0]);
 
+//exercise 4
+
+
+
+
+
+var fs = require('fs');
+var brk =  undefined;
+
+
+function calcReturns() {
+fs.readFile(process.argv[2], function doneCalc(err, fileContents) {
+brk = fileContents.toString();
+brk.split('\n');
+brk = brk.length - 1;
+                                                                  });
+
+                                                                  }
+calcReturns();
+console.log(brk);
 
 

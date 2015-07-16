@@ -8,7 +8,7 @@ var total = 0;
 for (var i = 0; i < process.argv.length; i++){
 
 if (i >= 2) {
-console.log(Number(process.argv[i]));
+//console.log(Number(process.argv[i]));
     total += Number(process.argv[i]);
 
 

@@ -1,8 +1,7 @@
-var exports = module.exports = {}
+var exports = module.exports = {};
 var fs = require('fs');
 var path = require('path');
 
-function countext(callback) {
 exports.fs.readdir(process.argv[2], function getcount(err, contents){
 if (err) return callback(err);
 for (var i = 0; i < contents.length; i++){
@@ -14,4 +13,4 @@ if (ptc == '.'+process.argv[3]) {
     }
 
 });
-}
+

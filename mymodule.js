@@ -2,7 +2,7 @@
 var fs = require('fs')
 var path = require('path')
 
-module.export = function calc (dir, ext, callback){
+module.export = function mymodule (dir, ext, callback){
 
     console.log(dir);
     console.log(ext);

@@ -7,6 +7,13 @@ exports.calc = function (dir, ext, callback){
     console.log(dir);
     console.log(ext);
 
+fs.readdir(dir, function (err, list) {
+      list.forEach(function (file) {
+        if (path.extname(file) === '.' + ext)
+          console.log(file)
+      });
+    });
+
 };
 
 

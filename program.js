@@ -120,4 +120,4 @@ var fs = require('fs');
 var path = require('path');
 var mymodule = require('./mymodule.js')
 
-mymodule();
+mymodule(process.argv[2], process.argv[3], callback);

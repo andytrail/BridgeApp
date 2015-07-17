@@ -88,13 +88,14 @@ var list = []
 console.log(dir);
 console.log(ext);
 
-fs.readdir(dir, function getcount(err, files){
+fs.readdir(dir, ext, function getcount(err, files){
 if (err) return console.error(err);
 for (var i = 0; i < files.length; i++){
 var ptc = path.extname(files[i]);
 if  (ptc == ext) {
 
         console.log(files[i]);
+     console.log(dir);
     }
 
     }

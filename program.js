@@ -45,16 +45,21 @@ var fs = require('fs');
 var brk =  undefined;
 
 
-function calcReturns() {
+function calcReturns(callback) {
 fs.readFile(process.argv[2], function doneCalc(err, fileContents) {
 brk = fileContents.toString();
 brk.split('\n');
 brk = brk.length - 1;
-                                                                  });
+    callback();
+                                                                  })
 
                                                                   }
-calcReturns();
+function logMyNumber() {
+    console.log(brk);
+}
 
-console.log(brk);
+calcReturns(logMyNumber);
+
+
 
 

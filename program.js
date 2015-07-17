@@ -83,12 +83,20 @@ var fs = require('fs');
 var path = require('path');
 var dir = process.argv[2];
 var ext = process.argv[3];
+var list = []
 
 console.log(dir);
 console.log(ext);
 
-fs.readdir(dir, ext, function getcount(err, contents){
+fs.readdir(dir, function getcount(err, files){
 if (err) return console.error(err);
+for (var i = 0; i < files.length; i++){
+var ptc = path.extname(files[i]);
+if  (ptc == ext) {
 
+        console.log(files[i]);
+    }
+
+    }
 
 });

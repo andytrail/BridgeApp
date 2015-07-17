@@ -41,6 +41,7 @@ console.log(brk);*/
 
 
 
+/*
 var fs = require('fs');
 var brk =  undefined;
 
@@ -63,5 +64,31 @@ function logMyNumber() {
 calcReturns(logMyNumber);
 
 
+//Actual solution:
+    var fs = require('fs')
+    var file = process.argv[2]
+
+    fs.readFile(file, function (err, contents) {
+      // fs.readFile(file, 'utf8', callback) can also be used
+      var lines = contents.toString().split('\n').length - 1
+      console.log(lines)
+    })
 
 
+*/
+
+//exercise 5
+
+var fs = require('fs');
+var path = require('path');
+var dir = process.argv[2];
+var ext = process.argv[3];
+
+console.log(dir);
+console.log(ext);
+
+fs.readdir(dir, ext, function getcount(err, contents){
+if (err) return console.error(err);
+
+
+});

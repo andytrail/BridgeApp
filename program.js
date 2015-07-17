@@ -82,23 +82,23 @@ calcReturns(logMyNumber);
 var fs = require('fs');
 var path = require('path');
 var dir = process.argv[2];
-
+var ext = process.argv[3];
 var list = []
 
 console.log(dir);
 console.log(ext);
 
-fs.readdir(dir, function getcount(err, files){
+fs.readdir(dir, function getcount(err, contents){
 if (err) return console.error(err);
-var ext = process.argv[3];
-    for (var i = 0; i < files.length; i++){
-var ptc = path.extname(files[i]);
+    for (var i = 0; i < contents.length; i++){
+var ptc = path.extname(contents[i]);
 if  (ptc == ext) {
 
-        console.log(files[i]);
+    console.log(contents[i]);
      console.log(dir);
     }
-
+ console.log(contents[i]);
+     console.log(dir);
     }
 
 });

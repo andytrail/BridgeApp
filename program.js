@@ -90,7 +90,9 @@ fs.readdir(dir, function getcount(err, contents){
 if (err) return console.error(err);
 for (var i = 0; i < contents.length; i++){
 var ptc = path.extname(contents[i]);
-if  (ptc == ext) {
+if  (ptc == '.'+ext) {
+
+     console.log(contents[i]);
     }
  console.log(ptc);
     }

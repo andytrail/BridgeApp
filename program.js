@@ -85,20 +85,14 @@ var dir = process.argv[2];
 var ext = process.argv[3];
 var list = []
 
-console.log(dir);
-console.log(ext);
 
 fs.readdir(dir, function getcount(err, contents){
 if (err) return console.error(err);
-    for (var i = 0; i < contents.length; i++){
+for (var i = 0; i < contents.length; i++){
 var ptc = path.extname(contents[i]);
 if  (ptc == ext) {
-
-    console.log(contents[i]);
-     console.log(dir);
     }
- console.log(contents[i]);
-     console.log(dir);
+ console.log(ptc);
     }
 
 });

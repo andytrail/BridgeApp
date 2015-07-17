@@ -47,9 +47,11 @@ var brk =  undefined;
 
 function calcReturns(callback) {
 fs.readFile(process.argv[2], function doneCalc(err, fileContents) {
-brk = fileContents.toString();
-brk.split('\n');
-brk = brk.length - 1;
+if (err) return console.error(err);
+    var str = fileContents.toString();
+var line = str.split('\n');
+brk = line.length;
+brk = brk - 1;
     callback();
                                                                   })
 

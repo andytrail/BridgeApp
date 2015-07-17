@@ -122,3 +122,5 @@ var calc = require('./mymodule').calc;
 var callback = undefined;
 
 calc(process.argv[2], process.argv[3], callback);
+
+console.log(callback);

@@ -2,12 +2,12 @@
 var fs = require('fs')
 var path = require('path')
 
-exports.calc = function (dir, ext, callback){
+module.exports.calc = function (dir, ext, callback){
 
 fs.readdir(dir, function (err, list) {
       list.forEach(function (file) {
         if (path.extname(file) === '.' + ext)
-          console.log(file);
+          return(file);
       });
     });
 

@@ -21,9 +21,10 @@ fs.readdir(dir, function (err, list) {
         if (path.extname(file) === '.' + ext);
           console.log(dir+ext);
           results.push(file);
+          return results;
       });
     });
-return results;
+
 };
 
 

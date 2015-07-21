@@ -121,8 +121,14 @@ var path = require('path');
 var mymodule = require('./mymodule');
 
 
+
+function logMyNumber(){
+    consle.log(results)
+}
+
 mymodule.calc(process.argv[2], process.argv[3]);
-console.log(results);
+
+
 
 /*
 mymodule.world();

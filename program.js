@@ -168,15 +168,16 @@ http.get(process.argv[2], function (res) {
     var pdl = '';
     var pageData ='';
     res.setEncoding('utf8');
+
+    res.on('data', function(chunk) {
+        pageData += chunk;
+
+    });
        res.on("end", function () {
        pdl += pageData;
            console.log(pdl.toString().length);
+             console.log(pageData);
    });
-    res.on('data', function(chunk) {
-        pageData += chunk;
-         console.log(pageData);
-    });
-
 
 });
 

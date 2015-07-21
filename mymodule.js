@@ -5,7 +5,8 @@ var path = require('path')
 
 
 calc = function (dir, ext, results, err){
-results = dir+'  '+ext;
+
+var results = dir+'  '+ext;
           return results;
 
 };

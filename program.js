@@ -140,9 +140,8 @@ var http = require('http');
 
 function getlines (callback){
 
-http.get(process.argv[2], function callback (res) {
-
-    var body =''
+http.get(process.argv[2], function callback (response) {
+var body =''
 response.on('data', function(d) {
     body+= d;
 

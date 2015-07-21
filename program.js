@@ -188,7 +188,6 @@ var site1 = process.argv[2];
 var site2 = process.argv[3];
 var site3 = process.argv[4];
 
-console.log(site1+site2+site3);
 
 
 function readUrl(url, callback) {
@@ -203,10 +202,9 @@ function readUrl(url, callback) {
     });
        res.on("end", function () {
        pdl += pageData;
-           console.log(pdl.toString().length);
              console.log(pageData);
    });
 });
 }
 
-readUrl(site1);
+readUrl([site1, site2, site3]);

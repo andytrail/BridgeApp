@@ -9,7 +9,6 @@ var exti = ext
       list.forEach(function (file) {
         if (path.extname(file) === '.' + exti)
           rest.push(file);
-          console.log(file);
          })
     })
 

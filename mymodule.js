@@ -3,7 +3,16 @@ var fs = require('fs')
 var path = require('path')
 
 exports.world = function() {
-    console.log('hello world');}
+    //console.log('hello world');
+message = 'Hello World';
+return message
+
+
+};
+
+
+
+
 exports.calc = function (dir, ext, callback){
 
 fs.readdir(dir, function (err, list) {

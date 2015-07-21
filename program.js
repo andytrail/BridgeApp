@@ -204,7 +204,7 @@ count --;
 });
 }
 readUrl([site1, site2, site3], function (data) {
-console.log(results);
+console.log(data);
 
 });
 

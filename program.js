@@ -161,7 +161,7 @@ console.log('complete');
 
 //ex 8
 
-var http = require('http');
+/*var http = require('http');
 
 
 http.get(process.argv[2], function (res) {
@@ -179,5 +179,11 @@ http.get(process.argv[2], function (res) {
              console.log(pageData);
    });
 
-});
+});*/
+//excercise 9
 
+var site1 = process.argv[2];
+var site2 = process.argv[3];
+var site1 = process.argv[4];
+
+console.out(site1+site2+site3);

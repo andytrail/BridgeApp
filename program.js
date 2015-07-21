@@ -138,15 +138,13 @@ if (err) return callback(err);
 
 var http = require('http');
 
-function getlines (callback){
-
-http.get(process.argv[2], function callback (response) {
-var body =''
-response.on('data', function(d) {
-    body += d;
-    console.log(body);
+http.get(process.argv[2], function (res) {
+console.log(res.statusCode);
+    res.on("data", function(chunk) {
+        console.log(chunk);
+    })
 
 })
 
 });
-}
+

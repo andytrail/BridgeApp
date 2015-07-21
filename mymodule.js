@@ -13,7 +13,7 @@ return message;
 
 
 
-exports.calc = function (dir, ext, callback){
+exports.calc = function (dir, ext){
 
 fs.readdir(dir, function (err, list) {
     var results = [];

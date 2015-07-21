@@ -121,7 +121,7 @@ var path = require('path');
 var mymodule = require('./mymodule');
 var results = undefined;
 
-mymodule.calc(process.argv[2], process.argv[3], callback);
+mymodule.calc(process.argv[2], process.argv[3]);
 console.log(results);
 
 mymodule.world();

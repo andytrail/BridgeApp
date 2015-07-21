@@ -143,7 +143,8 @@ function getlines (callback){
 http.get(process.argv[2], function callback (response) {
 var body =''
 response.on('data', function(d) {
-    body+= d;
+    body += d;
+    console.log(body);
 
 })
 

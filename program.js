@@ -124,3 +124,4 @@ var callback = undefined;
 mymodule.calc(process.argv[2], process.argv[3], callback);
 
 mymodule.world();
+console.log(message);

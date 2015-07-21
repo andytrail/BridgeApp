@@ -204,8 +204,10 @@ count --;
 });
 }
 readUrl([site1, site2, site3], function (data) {
-console.log(data);
-
+data.on('data', function(chunk) {
+pageData += chunk;
+console.log(pageData);
+});
 });
 
 

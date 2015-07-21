@@ -136,7 +136,7 @@ if (err) return callback(err);
 
 //Ex 7
 
-var http require('http');
+var http = require('http');
 var page = http.get(process.argv[2]);
 console.log(page);
 

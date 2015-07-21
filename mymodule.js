@@ -6,16 +6,18 @@ var path = require('path');
 var rest = [];
 var exti = ext
     fs.readdir(dir, function (err, list) {
-        if (err) return callback;
+        if (err) {
+            return callback(err);
+        }
         else {
       list.forEach(function (file) {
         if (path.extname(file) === '.' + exti){
-          rest.push(file);
+          rest.push(file)
         }
         })
         }
         })
-
+        }
 callback(null, rest);
 };
 

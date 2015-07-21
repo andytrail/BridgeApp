@@ -171,8 +171,10 @@ http.get(process.argv[2], function (res) {
         pageData += chunk;
     });
    res.on("end", function () {
-console.log('complete');
+
        console.log(pageData);
+       pdl = pageData.toString.length;
    });
+console.log(pdl);
 });
 

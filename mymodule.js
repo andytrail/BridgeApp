@@ -7,7 +7,6 @@ module.exports.calc = function (dir, ext, callback){
 fs.readdir(dir, function (err, list) {
       list.forEach(function (file) {
         if (path.extname(file) === '.' + ext)
-          return(file);
           console.log(file)
       });
     });

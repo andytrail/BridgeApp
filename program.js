@@ -142,10 +142,10 @@ http.get(process.argv[2], function (res) {
     var pageData ='';
     res.setEncoding('utf8');
     res.on('data', function(chunk) {
-        pageData += chunk +'/n';
-
+        pageData == chunk;
+console.log(pageData);
     });
    res.on("end", function () {
-        console.log(pageData);
+
    });
 });

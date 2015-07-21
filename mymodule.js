@@ -1,17 +1,15 @@
 
+
+
+
+
+module.exports = function (dir, ext, callback){
 var fs = require('fs')
 var path = require('path')
-
-
-
-calc = function (dir, ext, callback){
-
 var results = dir+'  '+ext;
           return results;
-callback();
+callback(null, results);
 };
-
-exports.calc = calc;
 
 
 

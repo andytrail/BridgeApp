@@ -122,11 +122,9 @@ var mymodule = require('./mymodule');
 
 
 
-function logMyNumber(){
-    console.log(results)
+mymodule(process.argv[2], process.argv[3], function(err, list) {
+  console.log(result);
 }
-
-mymodule.calc(process.argv[2], process.argv[3], callback);
 
 
 

@@ -118,24 +118,10 @@ if (ptc == '.'+ext) {
 
 var fs = require('fs');
 var path = require('path');
-var mymodule = require('./mymodule');
+var filter = require('./mymodule');
 
 
 
-mymodule(process.argv[2], process.argv[3], function(err, list) {
-  console.log(result);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+filter(process.argv[2], process.argv[3], function(err, results) {
+  console.log(results);
+});

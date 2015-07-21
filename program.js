@@ -194,8 +194,20 @@ function readUrl (paths, next) {
 var count = paths.length,
 data = {};
 paths.forEach(function (path){
-http.get(path, function (results){
-data[path] = results;
+http.get(path, function (res){
+    var pdl = '';
+    var pageData ='';
+    res.setEncoding('utf8');
+
+    res.on('data', function(chunk) {
+        pageData += chunk;
+
+    });
+       res.on("end", function () {
+       pdl += pageData;
+
+          //   console.log(pageData);
+   });
 count --;
     if (count <=0) {
         next(data)

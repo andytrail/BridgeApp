@@ -145,6 +145,3 @@ console.log(res.statusCode);
     })
 
 })
-
-});
-

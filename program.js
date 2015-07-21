@@ -136,6 +136,7 @@ if (err) return callback(err);
 
 //Ex 7
 
+/*
 var http = require('http');
 var options = {
     host: 'www.google.com',
@@ -156,3 +157,22 @@ http.get(options, function (res) {
 console.log('complete');
    });
 });
+*/
+
+//ex 8
+
+var http = require('http');
+
+
+http.get(process.argv[2], function (res) {
+    var pageData ='';
+    res.setEncoding('utf8');
+    res.on('data', function(chunk) {
+
+        console.log(chunk);
+    });
+   res.on("end", function () {
+console.log('complete');
+   });
+});
+

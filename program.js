@@ -191,7 +191,8 @@ var site3 = process.argv[4];
 console.log(site1+site2+site3);
 
 
-http.get(site1, function (res) {
+function readUrl(url, callback) {
+    http.get(url, function (res) {
     var pdl = '';
     var pageData ='';
     res.setEncoding('utf8');
@@ -206,10 +207,6 @@ http.get(site1, function (res) {
              console.log(pageData);
    });
 });
+}
 
-//readUrl([site1, site2, site3], function (data) {
-//console.log('Hi there');
-//});
-
-
-
+readUrl(site1);

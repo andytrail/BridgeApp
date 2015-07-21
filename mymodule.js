@@ -9,7 +9,7 @@ var rest = [dir, ext, 'this is the text'];
         if (path.extname(file) === '.' + ext)
           rest.push(file)
          }
-}
 callback(null, rest);
 });
-}
+};
+

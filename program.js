@@ -137,6 +137,6 @@ if (err) return callback(err);
 //Ex 7
 
 var http = require('http');
-obj = http.get(process.argv[2], function(res) {
-console.log(obj.data);
+obj = http.get(process.argv[2], function callback (res) {
+console.log(obj);
 });

@@ -170,14 +170,13 @@ http.get(process.argv[2], function (res) {
     res.setEncoding('utf8');
        res.on("end", function () {
        pdl += pageData;
+           console.log(pdl.toString().length);
+   });
     res.on('data', function(chunk) {
         pageData += chunk;
          console.log(pageData);
     });
 
-
-
-   });
 
 });
 

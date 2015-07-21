@@ -165,17 +165,17 @@ var http = require('http');
 
 
 http.get(process.argv[2], function (res) {
+    var pdl
     var pageData ='';
     res.setEncoding('utf8');
     res.on('data', function(chunk) {
         pageData += chunk;
     });
    res.on("end", function () {
-
        console.log(pageData);
-       var pdl = pageData.toString.length;
-       console.log(pdl);
-   });
+       pdl += pageData
 
+   });
+console.log(pdl.length);
 });
 

@@ -137,11 +137,15 @@ if (err) return callback(err);
 //Ex 7
 
 var http = require('http');
-var args = {host: 'Google.com'
+var options = {
+    host: 'www.google.com',
+    port: 80,
+    path: '/',
+    method: 'GET'
            };
 
 
-http.get(args, function (res) {
+http.get(options, function (res) {
     var pageData ='';
     res.setEncoding('utf8');
     res.on('data', function(chunk) {

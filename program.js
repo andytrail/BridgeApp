@@ -139,10 +139,11 @@ if (err) return callback(err);
 var http = require('http');
 
 http.get(process.argv[2], function (res) {
-console.log(res.statusCode);
+    var pageData =''
     res.setEncoding('utf8');
-    res.on("data", function(chunk) {
-        console.log(chunk);
-    })
+    res.on('data', function(chunk) {
+        pageData += chunk;
 
+    });
+ console.log(pageData);
 })

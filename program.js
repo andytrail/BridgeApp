@@ -123,4 +123,4 @@ var callback = undefined;
 
 calc(process.argv[2], process.argv[3], callback);
 
-//console.log(calc);
+console.log(file);

@@ -191,8 +191,8 @@ var site3 = process.argv[4];
 console.log(site1+site2+site3);
 
 function readUrl (paths, next) {
-var count = paths.length
-data{}
+var count = paths.length,
+data = {};
 paths.forEach(function (path){
 http.get(path, function (results){
 data[path] = results;

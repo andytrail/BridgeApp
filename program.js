@@ -124,4 +124,5 @@ var filter = require('./mymodule');
 
 filter(process.argv[2], process.argv[3], function(err, results) {
   console.log(results);
+    console.log('Help!');
 });

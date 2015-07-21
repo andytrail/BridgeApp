@@ -207,4 +207,6 @@ function readUrl(url, callback) {
 });
 }
 
-readUrl([site1, site2, site3]);
+readUrl(site1);
+readUrl(site2);
+readUrl(site3);

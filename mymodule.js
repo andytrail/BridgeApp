@@ -11,8 +11,8 @@ var exti = ext
           rest.push(file);
         }
       })
-    }
 callback(null, rest);
+    })
 }
 
 

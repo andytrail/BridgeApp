@@ -173,7 +173,7 @@ http.get(process.argv[2], function (res) {
    res.on("end", function () {
 
        console.log(pageData);
-       pdl = pageData.toString.length;
+       var pdl = pageData.toString.length;
    });
 console.log(pdl);
 });

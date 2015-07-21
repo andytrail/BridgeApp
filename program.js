@@ -190,11 +190,8 @@ var site3 = process.argv[4];
 
 console.log(site1+site2+site3);
 
-function readUrl (paths, next) {
-var count = paths.length,
-data = {};
-paths.forEach(function (path){
-http.get(path, function (res){
+
+http.get(site1, function (res) {
     var pdl = '';
     var pageData ='';
     res.setEncoding('utf8');
@@ -205,20 +202,14 @@ http.get(path, function (res){
     });
        res.on("end", function () {
        pdl += pageData;
-
-          //   console.log(pageData);
+           console.log(pdl.toString().length);
+             console.log(pageData);
    });
-count --;
-    if (count <=0) {
-        next(data)
-    }
 });
-});
-}
-readUrl([site1, site2, site3], function (data) {
-console.log('Hi there');
-});
-});
+
+//readUrl([site1, site2, site3], function (data) {
+//console.log('Hi there');
+//});
 
 
 

@@ -186,4 +186,4 @@ var site1 = process.argv[2];
 var site2 = process.argv[3];
 var site3 = process.argv[4];
 
-console.out(site1+site2+site3);
+console.log(site1+site2+site3);

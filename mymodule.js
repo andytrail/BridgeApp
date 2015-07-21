@@ -5,7 +5,7 @@ var path = require('path')
 exports.world = function() {
     //console.log('hello world');
 message = 'Hello World';
-return message
+return message;
 
 
 };
@@ -16,6 +16,7 @@ return message
 exports.calc = function (dir, ext, callback){
 
 fs.readdir(dir, function (err, list) {
+    var file = undefined;
       list.forEach(function (file) {
         if (path.extname(file) === '.' + ext);
           return file;

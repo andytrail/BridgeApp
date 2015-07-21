@@ -122,6 +122,7 @@ var mymodule = require('./mymodule');
 var callback = undefined;
 
 mymodule.calc(process.argv[2], process.argv[3], callback);
+console.log(file);
 
 mymodule.world();
 console.log(message);

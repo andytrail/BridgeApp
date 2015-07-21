@@ -4,12 +4,13 @@ var path = require('path')
 
 
 
-exports.calc = function (dir, ext, results){
+calc = function (dir, ext, results, err){
 results = dir+'  '+ext;
           return results;
 
 };
 
+exports.calc = calc;
 
 
 

@@ -142,7 +142,7 @@ http.get(process.argv[2], function (res) {
     var pageData ='';
     res.setEncoding('utf8');
     res.on('data', function(chunk) {
-        pageData += chunk;
+        pageData += chunk +'/n';
 
     });
    res.on("end", function () {

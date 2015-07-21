@@ -137,8 +137,11 @@ if (err) return callback(err);
 //Ex 7
 
 var http = require('http');
+var args = {host: 'Google.com'
+           };
 
-http.get(process.argv[2], function (res) {
+
+http.get(args, function (res) {
     var pageData ='';
     res.setEncoding('utf8');
     res.on('data', function(chunk) {
@@ -146,6 +149,6 @@ http.get(process.argv[2], function (res) {
         console.log(chunk);
     });
    res.on("end", function () {
-console.log(complete);
+console.log('complete');
    });
 });

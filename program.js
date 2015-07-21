@@ -176,6 +176,6 @@ http.get(process.argv[2], function (res) {
        pdl += pageData;
 
    });
-console.log(pdl.toString.length);
+console.log(pdl.toString().length);
 });
 

@@ -123,7 +123,12 @@ var filter = require('./mymodule');
 
 
 filter(process.argv[2], process.argv[3], function(err, rest) {
-  console.log(rest);
+if (err) return console.error(err);
+    else {
 
+        for (var i = 0; i < rest.length; i++){
+           console.log(rest[i]);
+        }
+    }
 });
-    console.log('Help!');
+

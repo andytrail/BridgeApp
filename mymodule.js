@@ -2,31 +2,13 @@
 var fs = require('fs')
 var path = require('path')
 
-exports.world = function() {
-    //console.log('hello world');
-message = 'Hello World';
-return message;
 
 
-};
-
-
-
-
-exports.calc = function (dir, ext){
-
-fs.readdir(dir, function (err, list) {
-    var results = [];
-      list.forEach(function (file) {
-        if (path.extname(file) === '.' + ext);
-          results.push(file);
+exports.calc = function (dir, ext, results){
+results = dir+'  '+ext;
           return results;
-      });
-    });
 
 };
-
-
 
 
 

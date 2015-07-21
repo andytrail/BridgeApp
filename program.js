@@ -165,7 +165,7 @@ var http = require('http');
 
 
 http.get(process.argv[2], function (res) {
-    var pdl
+    var pdl = '';
     var pageData ='';
     res.setEncoding('utf8');
     res.on('data', function(chunk) {

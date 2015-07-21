@@ -123,10 +123,10 @@ var mymodule = require('./mymodule');
 
 
 function logMyNumber(){
-    consle.log(results)
+    console.log(results)
 }
 
-mymodule.calc(process.argv[2], process.argv[3]);
+mymodule.calc(process.argv[2], process.argv[3], callback);
 
 
 

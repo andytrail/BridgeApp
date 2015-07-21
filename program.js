@@ -216,9 +216,7 @@ count --;
 });
 }
 readUrl([site1, site2, site3], function (data) {
-data.on('data', function(chunk) {
-pageData += chunk;
-console.log(pageData);
+console.log('Hi there');
 });
 });
 

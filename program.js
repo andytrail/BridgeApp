@@ -119,7 +119,7 @@ if (ptc == '.'+ext) {
 var fs = require('fs');
 var path = require('path');
 var mymodule = require('./mymodule');
-var results = undefined;
+//var results = undefined;
 
 mymodule.calc(process.argv[2], process.argv[3]);
 console.log(results);

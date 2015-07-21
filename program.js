@@ -174,8 +174,9 @@ http.get(process.argv[2], function (res) {
    res.on("end", function () {
        console.log(pageData);
        pdl += pageData;
+       console.log(pdl.toString().length);
 
    });
-console.log(pdl.toString().length);
+
 });
 
